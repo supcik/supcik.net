@@ -1,0 +1,86 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Jacques Supcik"
+theme = "introduction"
+canonifyurls = true
+contentdir = "content"
+layoutdir = "layouts"
+publishdir = "public"
+
+[params]
+author = "Jacques Supcik"
+firstname = "Jacques"
+tagline = "Technology addict and horses lover"
+introheight = "large" # Input either 'medium' or 'large' or 'fullheight'
+theme = "light" # Choose 'light' or 'dark'
+avatar = "img/profile.png" # Path to image in static folder eg. img/avatar.png, or comment out to remove
+email = "jacques@supcik.net"
+localtime = true # Show your current local time in contact section
+timezone = "Europe/Zurich"
+dateform = "2 Jan 2006"
+dateformfull = "Mon 2 Jan 2006 15:04:05 EST"
+cachebuster = true # Add the current unix timestamp in query string for cache busting css assets
+description = "Website Description"
+faviconfile = "img/profile.png"
+highlightjs = true # Syntax highlighting
+lang = "en"
+footertext = "" # Text to show in footer (overrides default text)
+fadein = false # Turn on/off the fade-in effect
+
+showblog = false # Show Blog section on home page
+showallposts = false # Set 'true' to list all posts on home page, or set 'false' to link to separate blog list page
+showlatest = true # Show latest blog post summary
+sharebuttons = true # On post pages, show share this social buttons
+
+# Share buttons
+sharetwitter = true
+sharefacebook = true
+sharepinterest = false
+sharegoogleplus = true
+
+showprojects    = false # Show Projects section on home page
+
+# This is your projects section. Three images of the same dimensions will look the nicest. If images are omitted, text links will be shown.
+project1link = "#"
+project1img = "img/project1.jpg"
+project1title = "Project 1"
+
+project2link = "#"
+project2img = "img/project2.jpg"
+project2title = "Project 2"
+
+project3link = "#"
+project3img = "img/project3.jpg"
+project3title = "Project 3"
+
+
+# Social icons appear in introduction and contact section. Add as many more as you like.
+# Find icon names here: http://fontawesome.io/cheatsheet/
+
+[[params.social]]
+url = "https://github.com/supcik"
+icon = "github"
+
+[[params.social]]
+url = "https://gitlab.com/supcik"
+icon = "gitlab"
+
+[[params.social]]
+url = "https://plus.google.com/u/0/+JacquesSupcik"
+icon = "google-plus"
+
+[[params.social]]
+url = "https://twitter.com/supcik"
+icon = "twitter"
+
+[[params.social]]
+url = "https://facebook.com/jacques.supcik"
+icon = "facebook"
+
+[[params.social]]
+url = "https://www.linkedin.com/in/supcik/"
+icon = "linkedin"
+
+[[params.social]]
+url = "http://telegram.me/supcik"
+icon = "telegram"
