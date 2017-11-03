@@ -1,0 +1,17 @@
+version: 2
+
+checkout:
+  post:
+    - 
+    - git submodule update --init
+
+jobs:
+   build:
+     docker:
+       - image: supcik/my-site-builder
+     steps:
+       - checkout
+       - run: git submodule sync
+       - run: git submodule update --init
+       - run: hugo
+       - run: find .
