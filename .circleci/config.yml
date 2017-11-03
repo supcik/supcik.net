@@ -14,4 +14,6 @@ jobs:
        - run: git submodule sync
        - run: git submodule update --init
        - run: hugo
-       - run: find .
+       - run: tar czvf supcik_net.tgz -C public .
+       - store_artifacts:
+           path: supcik_net.tgz
