@@ -1,7 +1,10 @@
-baseURL = "http://example.org/"
+baseURL = "https://www2.supcik.net"
 languageCode = "en-us"
 title = "Jacques Supcik"
 theme = "introduction"
+enforce_ssl = true
+builddrafts = false
+
 canonifyurls = true
 contentdir = "content"
 layoutdir = "layouts"
