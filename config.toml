@@ -1,4 +1,4 @@
-baseURL = "https://www2.supcik.net/"
+baseURL = "https://supcik.net/"
 languageCode = "en-us"
 title = "Jacques Supcik"
 theme = "introduction"
