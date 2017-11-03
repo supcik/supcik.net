@@ -17,3 +17,4 @@ jobs:
        - run: tar czvf supcik_net.tgz -C public .
        - store_artifacts:
            path: supcik_net.tgz
+           destination: supcik_net.tgz
