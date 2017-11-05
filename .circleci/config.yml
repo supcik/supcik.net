@@ -28,7 +28,7 @@ jobs:
         steps:
             - attach_workspace:
                 at: /tmp/workspace
-            — run: ghr -t $GITHUB_TOKEN -u $CIRCLE_PROJECT_USERNAME -r $CIRCLE_PROJECT_REPONAME --replace `git describe --tags` workspace/
+            - run: ghr -t $GITHUB_TOKEN -u $CIRCLE_PROJECT_USERNAME -r $CIRCLE_PROJECT_REPONAME --replace `git describe --tags` workspace/
 
 workflows:
     version: 2
