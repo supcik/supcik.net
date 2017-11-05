@@ -4,7 +4,6 @@ defaults: &defaults
         - image: supcik/my-site-builder
 
 version: 2
-
 jobs:
     build:
         <<: *defaults
