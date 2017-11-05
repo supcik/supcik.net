@@ -21,3 +21,25 @@ jobs:
                 root: workspace
                 paths:
                     - supcik_net.tgz
+    deploy:
+        <<: *defaults
+        steps:
+            - attach_workspace:
+                at: ${CIRCLE_WORKING_DIRECTORY}/workspace
+            - run: |
+                ghr -t $GITHUB_TOKEN -u $CIRCLE_PROJECT_USERNAME \
+                    -r $CIRCLE_PROJECT_REPONAME --replace `git describe --tags` workspace/
+
+workflows:
+    version: 2
+    build-deploy:
+        jobs:
+            - build
+            - deploy:
+                requires:
+                    - build-job
+                filters:
+                    branches:
+                        only: master
+                    tags:
+                        only: /.*/
