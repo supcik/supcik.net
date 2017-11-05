@@ -1,5 +1,4 @@
 defaults: &defaults
-    working_directory: /tmp
     docker:
         - image: supcik/my-site-builder
 
