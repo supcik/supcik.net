@@ -24,6 +24,7 @@ jobs:
     deploy:
         <<: *defaults
         steps:
+            - checkout
             - attach_workspace:
                 at: ${CIRCLE_WORKING_DIRECTORY}/workspace
             - run: |
