@@ -1,20 +1,45 @@
+defaults: &defaults
+    working_directory: /tmp
+    docker:
+        - image: supcik/my-site-builder
+
 version: 2
 
-checkout:
-  post:
-    - 
-    - git submodule update --init
-
 jobs:
-   build:
-     docker:
-       - image: supcik/my-site-builder
-     steps:
-       - checkout
-       - run: git submodule sync
-       - run: git submodule update --init
-       - run: hugo
-       - run: tar czvf supcik_net.tgz -C public .
-       - store_artifacts:
-           path: supcik_net.tgz
-           destination: supcik_net.tgz
+    build:
+        <<: *defaults
+        steps:
+            - checkout
+            - run: git submodule sync
+            - run: git submodule update --init
+            - run: hugo
+            - run: tar czvf supcik_net.tgz -C public .
+            - store_artifacts:
+                path: supcik_net.tgz
+                destination: supcik_net.tgz
+            - run: mkdir -p workspace
+            - run: cp supcik_net.tgz workspace/
+            - persist_to_workspace:
+                root: workspace
+                paths:
+                    - supcik_net.tgz
+    deploy:
+        <<: *defaults
+        steps:
+            - attach_workspace:
+                at: /tmp/workspace
+            — run: ghr -t $GITHUB_TOKEN -u $CIRCLE_PROJECT_USERNAME -r $CIRCLE_PROJECT_REPONAME --replace `git describe --tags` workspace/
+
+workflows:
+    version: 2
+    build-deploy:
+        jobs:
+            - build
+            - deploy:
+                requires:
+                    - build-job
+                filters:
+                    branches:
+                        only: master
+                    tags:
+                        only: /.*/
