@@ -15,21 +15,20 @@ jobs:
             - store_artifacts:
                 path: supcik_net.tgz
                 destination: supcik_net.tgz
-            - run: mkdir -p workspace
-            - run: cp supcik_net.tgz workspace/
-            - persist_to_workspace:
-                root: workspace
-                paths:
-                    - supcik_net.tgz
+
+
     deploy:
         <<: *defaults
         steps:
             - checkout
-            - attach_workspace:
-                at: ${CIRCLE_WORKING_DIRECTORY}/workspace
+            - run: git submodule sync
+            - run: git submodule update --init
+            - run: hugo
+            - run: mkdir dist
+            - run: tar czvf dist/supcik_net.tgz -C public .
             - run: |
                 ghr -t $GITHUB_TOKEN -u $CIRCLE_PROJECT_USERNAME \
-                    -r $CIRCLE_PROJECT_REPONAME --replace `git describe --tags` workspace/
+                    -r $CIRCLE_PROJECT_REPONAME --replace `git describe --tags` dist/
 
 workflows:
     version: 2
