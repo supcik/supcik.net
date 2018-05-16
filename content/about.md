@@ -1,5 +1,5 @@
 ---
-title: "about"
+title: "About"
 date: 2017-11-02T14:41:36+01:00
 draft: false
 ---
