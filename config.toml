@@ -12,7 +12,7 @@ publishdir = "public"
 
 pygmentsStyle = "monokailight"
 
-disqusshortname = "jacquessupcik"                             # Enable Disqus for comments
+disqusshortname = "supcik"                             # Enable Disqus for comments
 # googleAnalytics       = "xxx"
 
 [params]
