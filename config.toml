@@ -13,7 +13,7 @@ publishdir = "public"
 pygmentsStyle = "monokailight"
 
 disqusshortname = "supcik"                             # Enable Disqus for comments
-# googleAnalytics       = "xxx"
+googleAnalytics = "UA-49403333-1"
 
 [params]
     author = "Jacques Supcik"
