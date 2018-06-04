@@ -10,12 +10,16 @@ contentdir = "content"
 layoutdir = "layouts"
 publishdir = "public"
 
+pygmentsStyle = "monokailight"
+
 [params]
     author = "Jacques Supcik"
+    blogHead = "Jacques's Blog"  
     firstname = "Jacques"
     tagline = "Technology addict and horses lover"
     introheight = "large" # Input either 'medium' or 'large' or 'fullheight'
     themeStyle = "light" # Choose 'light' or 'dark'
+    customCSS = ["/css/supcik.css"]
     avatar = "img/profile.png" # Path to image in static folder eg. img/avatar.png, or comment out to remove
     email = "jacques@supcik.net"
     localtime = true # Show your current local time in contact section
@@ -26,14 +30,11 @@ publishdir = "public"
     description = "Website of Jacques Supcik"
     faviconfile = "img/profile.png"
 
-    pygmentsStyle       = "monokai"                         # https://help.farbox.com/pygments.html
-    pygmentsCodefences  = true
-
     lang = "en"
     footertext = "" # Text to show in footer (overrides default text)
     fadein = false # Turn on/off the fade-in effect
 
-    showblog = false # Show Blog section on home page
+    showblog = true # Show Blog section on home page
     showallposts = false # Set 'true' to list all posts on home page, or set 'false' to link to separate blog list page
     showlatest = true # Show latest blog post summary
     sharebuttons = true # On post pages, show share this social buttons
