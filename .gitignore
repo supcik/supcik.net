@@ -1,1 +1,4 @@
-public
+/public
+/.vscode
+/node_modules
+_gen
