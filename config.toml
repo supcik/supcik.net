@@ -97,6 +97,7 @@ pygmentsStyle = "monokailight"
         [languages.en.params]
             description  = "Personal web site of Jacques Supcik"   # Max 160 characters show in search results
             footerText   = ""
+
     [languages.fr]
         languageName     = "Français"
         languageCode     = "fr"
@@ -106,3 +107,4 @@ pygmentsStyle = "monokailight"
             dateFormat   = "2. January 2006"
             description  = "Site web personnel de Jacques Supcik"
             footerText   = ""
+            timeFormat   = "HH:mm"
