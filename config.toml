@@ -1,4 +1,4 @@
-baseURL = "https://supcik.net/"
+baseURL = "https://www.supcik.net/"
 theme = "introduction"
 DefaultContentLanguage = "en"
 disqusshortname = "supcik"
