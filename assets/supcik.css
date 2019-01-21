@@ -2,3 +2,9 @@
 .highlight th {
     text-align: left;
 }
+
+img {
+    border-radius: 0px;
+    border: none;
+    box-shadow: none;
+}
