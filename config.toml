@@ -24,6 +24,7 @@ pygmentsStyle = "monokailight"
     dateFormat                   = "Jan 2, 2006"
     timeZone                     = "Europe/Zurich"         # Your timezone as in the TZ* column of this list: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
     timeFormat                   = "H:mm A"                 # https://momentjs.com/docs/#/displaying/format/
+    updateTime                   = true
 
     email                        = "jacques@supcik.net"
     customCSS                    = ["supcik.css"]
@@ -34,7 +35,6 @@ pygmentsStyle = "monokailight"
         showAllPosts             = false                   # Set true to list all posts on home page, or set false to link to separate blog list page
         numberOfProjectsToShow   = 3                       # Maximum number of projects to show on home page. Unset or comment out to show all projects
         localTime                = true                    # Show your current local time in contact section
-        # updateTime               = true
 
     [params.projects]
         useTwoColumns            = false                   # Use a layout with two columns instead of three
@@ -96,7 +96,6 @@ pygmentsStyle = "monokailight"
     [languages.en]
         languageName     = "English"
         languageCode     = "en-us"
-        # contentDir       = "content/en"
         weight           = 1
         [languages.en.params]
             description  = "Personal web site of Jacques Supcik"   # Max 160 characters show in search results
@@ -106,7 +105,6 @@ pygmentsStyle = "monokailight"
     [languages.fr]
         languageName     = "Français"
         languageCode     = "fr"
-        # contentDir       = "content/fr"
         weight           = 2
         [languages.fr.params]
             dateFormat   = "2. January 2006"
