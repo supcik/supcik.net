@@ -22,17 +22,20 @@ pygmentsStyle = "monokailight"
     fadeInIndex                  = false                   # Turn on/off the fade-in effect on the index page even if fade-in was otherwise turned off
     
     dateFormat                   = "Jan 2, 2006"
-    email = "jacques@supcik.net"
-    customCSS = ["supcik.css"]
+    timeZone                     = "Europe/Zurich"         # Your timezone as in the TZ* column of this list: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+    timeFormat                   = "H:mm A"                 # https://momentjs.com/docs/#/displaying/format/
 
-   [params.home]
+    email                        = "jacques@supcik.net"
+    customCSS                    = ["supcik.css"]
+
+    [params.home]
         introHeight              = "large"                 # Input either "medium" or "large" or "fullheight"
         showLatest               = true                    # Show latest blog post summary
         showAllPosts             = false                   # Set true to list all posts on home page, or set false to link to separate blog list page
         numberOfProjectsToShow   = 3                       # Maximum number of projects to show on home page. Unset or comment out to show all projects
-
         localTime                = true                    # Show your current local time in contact section
-        timeZone                 = "Europe/Zurich"   # Your timezone as in the TZ* column of this list: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+        # updateTime               = true
+
     [params.projects]
         useTwoColumns            = false                   # Use a layout with two columns instead of three
 
@@ -88,23 +91,26 @@ pygmentsStyle = "monokailight"
 [taxonomies]
   tag = "tags"
 
+
 [languages]
     [languages.en]
         languageName     = "English"
         languageCode     = "en-us"
-        contentDir       = "content/en"
-        weight           = 0
+        # contentDir       = "content/en"
+        weight           = 1
         [languages.en.params]
             description  = "Personal web site of Jacques Supcik"   # Max 160 characters show in search results
             footerText   = ""
 
+
     [languages.fr]
         languageName     = "Français"
         languageCode     = "fr"
-        contentDir       = "content/fr"
+        # contentDir       = "content/fr"
         weight           = 2
         [languages.fr.params]
             dateFormat   = "2. January 2006"
+            timeFormat   = "HH:mm"                 # https://momentjs.com/docs/#/displaying/format/
             description  = "Site web personnel de Jacques Supcik"
             footerText   = ""
-            timeFormat   = "HH:mm"
+

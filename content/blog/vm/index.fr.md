@@ -11,7 +11,7 @@ La mémoire virtuelle est géréé par le «MMU» (Memory Management Unit). Le M
 qui se trouve entre le CPU et la RAM.
 Il reçoit une **adresse virtuelle** du CPU et la convertit en **adresse physique** vers la RAM :
 
-![Example image](/img/blog/vm/vm0.svg)
+![Example image](vm0.svg)
 
 Sur les systèmes modernes, la largeur du bus d'adresse virtuelle est généralement la même que la largeur
 du bus physique (souvent 32 ou 64 bit), mais sur les systèmes plus anciens, il n'était pas rare
@@ -45,7 +45,7 @@ L'adresse $0x706c$ est donc à l'offset $0x6c$ de la page $7$.
 Comme la taille de la page est de $2^{of}$, l'offset se lit simplement sur les $of$ derniers bits et le
 numéro de page se trouve sur les $sy - of = pg$ bits de poid fort:
 
-![Example image](/img/blog/vm/vm1.svg)
+![Example image](vm1.svg)
 
 La page est l'unité de gestion de la mémoire virtuelle et quand on convertit une adresse virtuelle,
 on convertit en fait **la page** virtuelle en **page** physique. Comme la taille des pages est la
