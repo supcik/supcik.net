@@ -1,0 +1,19 @@
+{
+  "name": "supcik.net",
+  "version": "1.0.0",
+  "description": "Jacques's web site",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/supcik/supcik.net.git"
+  },
+  "author": "Jacques Supcik",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/supcik/supcik.net/issues"
+  },
+  "homepage": "https://github.com/supcik/supcik.net#readme",
+  "dependencies": {
+    "autoprefixer": "^9.6.1",
+    "postcss-cli": "^6.1.3"
+  }
+}
