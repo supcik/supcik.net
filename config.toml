@@ -91,7 +91,6 @@ pygmentsStyle = "monokailight"
 [taxonomies]
   tag = "tags"
 
-
 [languages]
     [languages.en]
         languageName     = "English"
@@ -100,7 +99,6 @@ pygmentsStyle = "monokailight"
         [languages.en.params]
             description  = "Personal web site of Jacques Supcik"   # Max 160 characters show in search results
             footerText   = ""
-
 
     [languages.fr]
         languageName     = "Français"
