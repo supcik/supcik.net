@@ -2,7 +2,7 @@
 
 build:
 	hugo --gc
-	html-minifier --input-dir public --output-dir public --collapse-whitespace --file-ext html
+	html-minifier --input-dir public --output-dir public --collapse-whitespace --minify-css true --minify-js true --file-ext html
 
 deploy-preview:
 	hugo  --gc --buildFuture -b $(DEPLOY_PRIME_URL)
