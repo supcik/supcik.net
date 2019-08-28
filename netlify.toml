@@ -1,30 +1,16 @@
 [build]
 publish = "public"
-command = "hugo --gc"
+command = "make build"
+
+[build.environment]
+HUGO_VERSION = "0.57.2"
 
 [context.production.environment]
-HUGO_VERSION = "0.57.2"
 HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
-
-[context.split1]
-command = "hugo --gc --enableGitInfo"
-
-[context.split1.environment]
-HUGO_VERSION = "0.57.2"
-HUGO_ENV = "production"
 
 [context.deploy-preview]
-command = "hugo  --gc --buildFuture -b $DEPLOY_PRIME_URL"
-
-[context.deploy-preview.environment]
-HUGO_VERSION = "0.57.2"
+command = "make deploy-preview"
 
 [context.branch-deploy]
-command = "hugo  --gc -b $DEPLOY_PRIME_URL"
-
-[context.branch-deploy.environment]
-HUGO_VERSION = "0.57.2"
-
-[context.next.environment]
-HUGO_ENABLEGITINFO = "true"
+command = "make branch-deploy"

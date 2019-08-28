@@ -23,8 +23,7 @@ pygmentsStyle = "monokailight"
     
     dateFormat                   = "Jan 2, 2006"
     timeZone                     = "Europe/Zurich"         # Your timezone as in the TZ* column of this list: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-    timeFormat                   = "H:mm A"                 # https://momentjs.com/docs/#/displaying/format/
-    updateTime                   = true
+    timeFormat                   = "h:mm A"                 # https://momentjs.com/docs/#/displaying/format/
 
     email                        = "jacques@supcik.net"
     customCSS                    = ["supcik.css"]
@@ -35,6 +34,7 @@ pygmentsStyle = "monokailight"
         showAllPosts             = false                   # Set true to list all posts on home page, or set false to link to separate blog list page
         numberOfProjectsToShow   = 3                       # Maximum number of projects to show on home page. Unset or comment out to show all projects
         localTime                = true                    # Show your current local time in contact section
+        timeRefresh              = 1000
 
     [params.projects]
         useTwoColumns            = false                   # Use a layout with two columns instead of three
