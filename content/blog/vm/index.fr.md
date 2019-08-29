@@ -4,6 +4,12 @@ date: 2019-01-10T23:23:15+01:00
 draft: false
 ---
 
+{{% bbox class="has-background-white-ter" %}}
+
+_(This article is only available in French / Cet article n'est disponible qu'en français)_
+
+{{% /bbox %}}
+
 La mémoire virtuelle est un composant important des systèmes d'exploitation modernes. Sans lui,
 il est très difficile de permettre à plusieurs processus de cohabiter de manière sûre.
 

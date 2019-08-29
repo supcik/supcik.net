@@ -3,6 +3,13 @@ title: "How to solve the MONEY problem with Go"
 date: 2018-06-04
 tags: ['golang', 'algorithm']
 ---
+
+{{% bbox class="has-background-white-ter" %}}
+
+_(Cet article n'est disponible qu'en anglais / This article is only available in English)_
+
+{{% /bbox %}}
+
 Learning Go could probably help you get a good job, but this is not the subject of this post.
 Here we will show you how to solve the classical [verbal arithmetic puzzle,](https://en.wikipedia.org/wiki/Verbal_arithmetic) "SEND + MORE = MONEY".
 The goal is to find the mapping between the letters and the digits such that the
